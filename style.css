@@ -3,12 +3,44 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  /*--------------------------------------NAV MENU---------------------------------------*/
+  .topmost-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #b5b4c9;
+    color: rgb(3, 3, 3);
+    
+  }
+
+  .topmost-nav a{
+    color: rgb(58, 2, 212);
+    border-left: 2px #fff solid;
+    padding-left: 5px;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+
+  .topmost-nav a:hover{
+    color: rgb(10, 9, 9);
+    background-color: azure;
+    text-decoration: none;
+    
+  }
+  
   .topnav {
     overflow: hidden;
-    background-color: rgb(10, 6, 243);
+    background-color: rgb(5, 4, 10);
     background: linear-gradient(to right, #0A06F3, #9091c9, #06064b, #2b4f9e);
 	  background-size: 400% 400%;
 	  animation: gradient 15s ease infinite;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 
     /*animation-name: example;
     animation-duration: 10s;
@@ -53,10 +85,13 @@ body {
     padding: 35px 25px;
     text-decoration: none;
     font-size: 20px;
+    border-right: 2px rgba(15, 15, 15, 0.5) solid;
+
+    
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(238, 229, 229);
     color: black;
     
   }
@@ -92,7 +127,221 @@ body {
     }
   }
 
+  main{
+
+    margin-top: 10px;
+  }
+/*---------------------------------------iMAGE SLIDES------------------------------------*/
   .carousel-inner img {
     width: 100%;
-    height: 100%;
+    height: 30%;
+  }
+
+/*--------------------------------------section 1----------------------------------------*/
+  .section1{
+    padding: 80px 40px 130px 40px;
+    background-color: #f4f4f8;
+  }
+
+  .section1 h2{
+    text-align: center;
+  }
+
+  .about-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+
+  .about-card ul{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .card-img{
+    background-image: url('./images/computer-lab.jpg');
+    border-radius: 50%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 3px rgb(75, 75, 117) solid;
+    
+
+
+  }
+
+  .card-img img{
+    border-radius: 50%;
+    margin: auto;
+    border: 3px rgb(198, 198, 211) solid;
+    box-shadow: 0 7px 40px rgba(0, 0, 0, 0.9);
+    transition: transform .7s ease-in-out;
+
+  
+  }
+
+  .about-textnbutton h6, .about-textnbutton ul li{
+    text-align: center;
+  }
+
+  .about-textnbutton a{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .about-textnbutton a button{
+    padding: 17px 22px;
+    background-color: #06064b;
+    border-radius: 20px;
+    color: azure;
+    
+  }
+
+  .about-textnbutton a button:hover{
+    padding: 17px 22px;
+    background-color: #272766;
+    border-radius: 10px;
+    color: azure;
+    
+  }
+
+  .about-textnbutton h6{
+    font-weight: 800;
+    
+  }
+
+  /*-------------------------------------ABOUT US----------------------------------------*/ 
+  #section2{
+    background-color: rgb(1, 7, 85);
+    padding-top: 50px;
+    margin-top: 0;
+  }
+
+  #headexp{
+    text-align: center;
+    color: azure;
+  }
+  
+  .cards-container {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 10px 10px 0 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 250px;
+    opacity: 0.9;
+    transition: width 6s, opacity 6s, transform 4s;
+  }
+  
+  .card:hover{
+    flex: 1;
+    margin: 20px 20px 0 20px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+    width: 255px;
+    opacity: 1.0;
+    transform: scale(1.1);
+  }
+
+  .card-header{
+    padding-top: 30px;
+  }
+  .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tag-teal {
+    background-color: #47bcd4;
+  }
+  .tag-purple {
+    background-color: #5e76bf;
+  }
+  .tag-pink {
+    background-color: #cd5b9f;
+  }
+  
+  .card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+
+  .spanexp::before, .spanexp::after {
+    content: "__________________________________";
+    color: #fff;
+    
+    font-weight: bold;
+  }
+  
+  .openhrs{
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+  
+  h3.spanexp{
+    color: #fff;
+    
+  }
+
+  .timelist li, li{
+    list-style: none;
+  }
+  
+  .timelist li{
+    color: #fff;
+    
+  }
+  
+  li h4{
+    text-align: center;
+  }
+  
+  .timelist{
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  footer{
+    background-color: rgb(1, 5, 63);
+    width: 100%;
+    padding: 20px ;
+    color: azure;
+    text-align: center;
+    font-size: 1.5em;
   }

@@ -6,3 +6,6 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+const d = new Date();
+document.getElementById("demo").innerHTML = " " + d.getFullYear();
