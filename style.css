@@ -179,6 +179,10 @@ body {
   
   }
 
+  .card-img img:hover{
+    transform: rotate(180deg);
+  }
+
   .about-textnbutton h6, .about-textnbutton ul li{
     text-align: center;
   }
@@ -335,6 +339,30 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 30px;
+  }
+
+  /*------------------------------------section3---------------------------------------*/
+
+  .section3{
+    padding: 150px 100px;
+  }
+
+  .fr-dolph{
+    display: flex;
+
+  }
+
+  .fr-dolph div img{
+    margin-right: 50px;
+    border-radius: 20px;
+    border: 2px gray solid;
+  }
+
+  #author{
+    text-align: right;
+    margin-top: 45px;
+    font-size: 1.4em;
+    font-weight: 900;
   }
 
   footer{
