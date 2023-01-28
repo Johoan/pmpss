@@ -153,6 +153,13 @@ body {
     margin-top: 100px;
   }
 
+  .about-card:hover{
+    display: block;
+    transform: scale(1.1);
+    transition: all 0.6s ease-out;
+    
+  }
+
   .about-card ul{
     margin-left: 0;
     padding-left: 0;
@@ -247,14 +254,15 @@ body {
   
   .card:hover{
     flex: 1;
+    display: block;
     margin: 20px 20px 0 20px;
     padding: 12px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
-    width: 255px;
+    width: 200px;
     opacity: 1.0;
-    transform: scale(1.1);
+    transform: scale(1);
   }
 
   .card-header{
@@ -365,7 +373,69 @@ body {
     font-weight: 900;
   }
 
-  footer{
+  /*---------------------------Footer----------------------------------------*/
+
+  .footer1{
+    
+    background-color: #eef2f3;
+    height: 480px;
+    
+  }
+
+  .foot-row{
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-around;
+  }
+
+  .footer1 div ul{
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer1 div li a{
+    color: rgb(51, 50, 50);
+  }
+  
+  .mapouter{
+    margin: 0;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white !important;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white !important;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white !important;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white !important;
+  }
+
+  .copyright{
     background-color: rgb(1, 5, 63);
     width: 100%;
     padding: 20px ;
