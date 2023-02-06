@@ -1,0 +1,105 @@
+body {
+    position: relative;
+    background: #f0eace;
+    color: #4b3b35;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  
+  h1 {
+    font-family: "Patua One", serif;
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  
+  .fa {
+    z-index: 10;
+  }
+  
+  p {
+    margin-bottom: 1.2em;
+  }
+  
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  .wrapper.page {
+    padding: 4em 1em;
+  }
+  .wrapper.page p:first-of-type {
+    font-weight: 700;
+  }
+  
+  .contact {
+    position: absolute;
+    z-index: 20;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    background: #5d5550;
+    color: #ede6bd;
+    transition: all 0.4s;
+    transform: translateY(-100%);
+  }
+  .contact.open-form {
+    transform: translateY(0);
+  }
+  .contact p {
+    font-weight: 600;
+  }
+  .contact p.close {
+    text-align: right;
+    cursor: pointer;
+  }
+  .contact p.thanks {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .contact p.thanks.visible {
+    opacity: 1;
+  }
+  .contact input, .contact textarea {
+    width: 100%;
+    background: #f0edde;
+    border: #4b3b35 solid 2px;
+    border-radius: 0.5em;
+    resize: none;
+    padding: 0.7em 1em;
+    color: #5d5550;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 0.65em;
+    font-weight: 600;
+  }
+  .contact textarea {
+    font-size: 0.6em;
+    height: 20em;
+  }
+  .contact input[type=submit] {
+    width: auto;
+    font-size: 0.8em;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  .topbar {
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #4b3b35;
+    color: #ede6bd;
+    font-weight: 900;
+    height: 60px;
+    line-height: 60px;
+  }
+  .topbar span {
+    float: right;
+    font-weight: 600;
+  }
+  .topbar span.open {
+    cursor: pointer;
+  }
