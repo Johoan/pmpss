@@ -1,24 +1,18 @@
-$(function() {
-    $("#open-form").click(function(){ 
-      $(".contact").addClass("open-form");
-    });
-    });
-    
-    $(function() {
-    $("#submit").click(function(){ 
-      setTimeout('jQuery(".contact").removeClass("open-form")', 3000);
-      setTimeout('jQuery(".thanks").removeClass("visible")', 3000);
-    });
-    });
-    
-    $(function() {
-    $("#submit").click(function(){ 
-      $(".thanks").addClass("visible");
-    });
-    });
-    
-    $(function() {
-    $(".close").click(function(){ 
-      $(".contact").removeClass("open-form");
-    });
-    });
+window.$("#btn").click(function () {
+	"use strict";
+	window.$("#ovrly").fadeIn();
+	window.$("#login").show();
+	window.$("#login").animate({top: "100"});
+});
+window.$("#ovrly").click(function () {
+	"use strict";
+	window.$("#ovrly").hide();
+	window.$("#login").hide();
+	window.$("#login").css("top", "-310px");
+});
+window.$("#cross").click(function () {
+	"use strict";
+	window.$("#ovrly").hide();
+	window.$("#login").hide();
+	window.$("#login").css("top", "-310px");
+});

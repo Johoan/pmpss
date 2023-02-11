@@ -249,7 +249,7 @@ body {
   }
 
   .card-img img:hover{
-    transform: rotate(180deg);
+    transform: rotate(320deg);
   }
 
   .about-textnbutton h6, .about-textnbutton ul li{

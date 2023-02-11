@@ -1,105 +1,127 @@
-body {
-    position: relative;
-    background: #f0eace;
-    color: #4b3b35;
-    font-family: "Open Sans", arial, sans-serif;
-    font-size: 1.4em;
-    line-height: 1.4em;
-  }
+body{margin: 0px;}
+
+.contacts{
+  margin: 60px 150px;
+}
+
+.contacts ul li{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.button-div{
+  line-height: 0;
+}
+
+.name-div{
+	display: flex;
+	
+}
+
+.fname{
+	display: float;
+	float: inline-start;
+}
+
+.lname{
+	display: float;
+	float: inline-start;
+}
+
+.label{
+	padding-bottom: 10px;
+}
+
+.names{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 0px;
+}
+#btn{
+	background-color: #160896;
+	border: none;
+	padding: 7px;
+	color: #fff;
+	margin: 20px;
+	border-radius: 5px;
+	font-size: 16
+}
+#btn:hover{
+	background-color: #fff;
+	color: #2205a5;
+	border: 2px solid #040191
+}
+#ovrly{
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	opacity: 0.7;
+}
+#login{
+	/*background-color: rgb(7, 6, 78);*/
+	background-image: url(../images/motos.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	width: 60%;
+	height: 75%;
+	margin: auto;
+	border: 3px solid #f8f8fa;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	top: -410px;
+  left: 20%;
+  z-index: 9999;
   
-  h1 {
-    font-family: "Patua One", serif;
-    font-size: 2em;
-    margin-bottom: 0.8em;
-  }
-  
-  .fa {
-    z-index: 10;
-  }
-  
-  p {
-    margin-bottom: 1.2em;
-  }
-  
-  .wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 1em;
-  }
-  .wrapper.page {
-    padding: 4em 1em;
-  }
-  .wrapper.page p:first-of-type {
-    font-weight: 700;
-  }
-  
-  .contact {
-    position: absolute;
-    z-index: 20;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 2em;
-    background: #5d5550;
-    color: #ede6bd;
-    transition: all 0.4s;
-    transform: translateY(-100%);
-  }
-  .contact.open-form {
-    transform: translateY(0);
-  }
-  .contact p {
-    font-weight: 600;
-  }
-  .contact p.close {
-    text-align: right;
-    cursor: pointer;
-  }
-  .contact p.thanks {
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .contact p.thanks.visible {
-    opacity: 1;
-  }
-  .contact input, .contact textarea {
-    width: 100%;
-    background: #f0edde;
-    border: #4b3b35 solid 2px;
-    border-radius: 0.5em;
-    resize: none;
-    padding: 0.7em 1em;
-    color: #5d5550;
-    font-family: "Open Sans", arial, sans-serif;
-    font-size: 0.65em;
-    font-weight: 600;
-  }
-  .contact textarea {
-    font-size: 0.6em;
-    height: 20em;
-  }
-  .contact input[type=submit] {
-    width: auto;
-    font-size: 0.8em;
-    font-weight: 900;
-    cursor: pointer;
-  }
-  
-  .topbar {
-    z-index: 30;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #4b3b35;
-    color: #ede6bd;
-    font-weight: 900;
-    height: 60px;
-    line-height: 60px;
-  }
-  .topbar span {
-    float: right;
-    font-weight: 600;
-  }
-  .topbar span.open {
-    cursor: pointer;
-  }
+}
+
+#ovrly,#login{display: none;}
+#cross{
+	position: absolute;
+    left: 95%;
+    top: 18px;
+    color: #4b4646;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 50%;
+	border: 0
+}
+
+#cross:hover{
+	color: #f5061a;
+}
+
+#login h1{
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+h1{margin-top: 0px}
+
+
+
+.button{
+	height: 40px;
+	width: 110px;
+	background-color: #0511b4;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 800;
+	}
+
+.button:hover{
+	background-color: #2205a5;
+}
+.txt,.pswd{
+	background-color: #fff;
+	display: block;
+	border: 2px solid #0b0199;
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 15px;
+}
