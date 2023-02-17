@@ -14,31 +14,42 @@
 .pictures-row{
     display: flex;
     justify-content: space-between;
-    z-index: -1;
+    flex-wrap: wrap;
+    z-index: 1;
     position: relative;
-    animation-name: example;
-    animation-duration: 3s;
+    
   }
   
-  @keyframes example {
-    0%   {left:0px; right:0px; display: none;  transform: rotate(0deg);}
-    25%  {left:200px; right:0px; display: none;}
-    50%  {left:200px; right:200px;  }
-    75%  {left:0px; right:200px;  }
-    100% {left:0px; right:0px;  transform: rotate(360deg);}
-  }
+ 
 
 
 .pictures-row img{
    /* border: 2px f2f2f2 solid;*/
    border: 10px solid transparent;
   padding: 1px;
-  border-image: url(../images/plain3.jpeg) 30 stretch;
+  border-image: url(../images/blue-stripe.jpeg) 30 stretch;
 
 
+}
+
+.reveal div h3{
+    z-index: -1;
 }
 
 .pictures-row img:hover{
     transform: scale(1.4);
     transition: all 0.6s ease-out;
+    z-index: 999;
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

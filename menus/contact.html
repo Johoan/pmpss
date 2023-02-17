@@ -82,24 +82,28 @@
     <div id="ovrly"></div>
     <div id="login">
         <button id="cross">&times;</button>
-        <h1>Send Us Meesage!</h1>
+        <h1>Send Us Message!</h1>
         <!--<form>
             <input type="text" placeholder="enter your Email" class="txt"/>
             <input type="password" placeholder="enter your password" class="pswd"/>
             <input type="button" value="Sumbit" id="btn"/>
         </form>-->
-        <form action="/action_page.php">
+        <form action="/mailto:johoantoech@yahoo.com" 
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
           <div class="name-div"> 
             
            
-        </div>
+        
         <div class="names fname">
           <label for="fname" class="label">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your first name.." style="width: 50%;" class="txt">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name.." width="250" class="txt">
         </div>
         <div class="names lname">
           <label for="lname" class="label">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width: 50%;" class="txt">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." width="250" class="txt">
+        </div>
         </div>
         <div class="names">
           <label for="email" class="label">Email</label>
@@ -108,7 +112,7 @@
         
         <div class="names">
           <label for="subject" class="label">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px; width: 70%;" class="txt"></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px; width: 70%;" class="txt"></textarea>
         </div>
           <input type="submit" value="Submit" class="button">
         </form>
@@ -134,10 +138,10 @@
     <div class="foot-column">
       <h5>Quick Links</h5>
       <ul>
-        <li><a href="#">Photo Gallery</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">FAQ Admission</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ Admission</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="foot-column">

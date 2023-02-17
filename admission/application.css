@@ -1,4 +1,8 @@
- aside {
+body{
+  background-color: rgb(233, 228, 245);
+  color: rgb(53, 58, 58);
+}
+aside {
     height: 60%;
     width: 210px;
     position: absolute;
@@ -29,6 +33,7 @@
 
   .main{
     margin: 40px 50px 30px 250px;
+    
   }
   
   @media screen and (max-height: 450px) {
@@ -36,15 +41,26 @@
     .sidebar a {font-size: 18px;}
   }
 
+  
   .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 40px 50px;
+    margin-top: 50px;
+    margin-left: 10%;
+    line-height: normal;
+    background-image: url(../images/gray.jpeg);
+    border-radius: 10px;
+    
+  }
+
+  .form-page{
+    
   }
 
   .form-column{
     display: flex;
     flex-direction: column;
+    
+    
   }
 
   
@@ -53,7 +69,57 @@
     
   }
 
+  label{
+    color: #818181;
+  }
 
+  .label{
+    color: black;
+    font-size: 1.1em;
+  }
+  .txt, .num{
+    height: 40px;
+    border-radius: 10px;
+    border-color: #818181;
+    outline: none;
+  }
+
+  .street, .zip, .school{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #818181;
+  }
+
+  input[type=tel]{
+    outline: none;
+  }
+
+  input[type=text]:focus,
+  input[type=number]:focus, 
+  input[type=email]:focus,
+  input[type=tel]:focus{
+    border: 2px rgb(111, 111, 184) solid;
+    background-color: #f2f0f7;
+  }
+
+  .margin{
+    margin-top: 23px;
+  }
+
+  .parents{
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .occupation{
+    margin-bottom: 60px;
+  }
+
+  .em-para{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
 .name{
     display: inline-flex;
     gap: 60px;
@@ -62,4 +128,22 @@
 .city-state{
   display: flex;
   gap: 50px;
+}
+
+input[type=button] {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  background-color: rgb(53, 53, 87);
+  color: azure;
+}
+
+input[type=button]:hover {
+  background-color: rgb(93, 93, 238);
+  /*width: 110px;
+  height: 60px;*/
+  border-radius: 10%;
+  transform: scale(1.2);
 }

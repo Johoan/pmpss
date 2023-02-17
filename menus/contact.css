@@ -15,6 +15,9 @@ body{margin: 0px;}
 
 .name-div{
 	display: flex;
+	justify-content: center;
+	gap: 25px;
+	flex-wrap: wrap;
 	
 }
 
@@ -37,6 +40,7 @@ body{margin: 0px;}
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 0px;
+	margin-bottom: 20px;
 }
 #btn{
 	background-color: #160896;
@@ -62,12 +66,12 @@ body{margin: 0px;}
 }
 #login{
 	/*background-color: rgb(7, 6, 78);*/
-	background-image: url(../images/motos.jpeg);
+	background-image: url(../images/blue-shine.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
 	width: 60%;
-	height: 75%;
+	height: 74%;
 	margin: auto;
 	border: 3px solid #f8f8fa;
 	border-radius: 10px;
@@ -75,8 +79,8 @@ body{margin: 0px;}
 	text-align: center;
 	position: fixed;
 	top: -410px;
-  left: 20%;
-  z-index: 9999;
+  	left: 20%;
+  	z-index: 9999;
   
 }
 
@@ -85,7 +89,8 @@ body{margin: 0px;}
 	position: absolute;
     left: 95%;
     top: 18px;
-    color: #4b4646;
+    color: #faf8f8;
+	background-color: #f5061a;
 	font-size: 25px;
 	font-weight: bold;
 	border-radius: 50%;
@@ -94,6 +99,7 @@ body{margin: 0px;}
 
 #cross:hover{
 	color: #f5061a;
+	background-color: aliceblue;
 }
 
 #login h1{

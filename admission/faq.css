@@ -1,0 +1,78 @@
+aside {
+    height: 60%;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 0;
+    background-color: rgb(241, 240, 243);
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar-div ul li{
+    
+    margin-bottom: 20px;
+  }
+  
+
+  .main{
+    margin: 60px 50px 30px 250px;
+    
+  }
+  .main h2{
+    text-align: center;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.collapsible {
+    background-color: rgb(16, 2, 94);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(69, 55, 194);
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }

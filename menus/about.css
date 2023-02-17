@@ -2,3 +2,145 @@
     /*background-image: url('../images/pajiro-plan3.jpeg');*/
     
 }
+
+aside {
+    height: 60%;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    top: 617px;
+    left: 0;
+    background-color: rgb(241, 240, 243);
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar-div ul li{
+    
+    margin-bottom: 20px;
+  }
+  
+
+
+.main-section{
+    margin: 40px 100px;
+}
+
+
+.main-section{
+    margin: 40px 50px 30px 250px;
+    
+  }
+
+  .values{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .values h3{
+    margin-bottom: 20px;
+  }
+
+  .value{
+    background-image: url("../images/blue-shine.jpeg");
+    height: 90px;
+    width: auto;
+    padding: 20px 30px;
+    color: #f1f1f1;
+  }
+
+  .value:hover{
+    color: white;
+    font-weight: 800;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+section{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin: auto;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 10px;
+  padding: 10px;
+  background-image: url(../images/blue-stripe.jpeg);
+  border-radius: 5px;
+  color: white;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
