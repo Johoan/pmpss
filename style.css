@@ -333,8 +333,9 @@ body {
   /*-------------------------------------Section3-----------------------------------------*/
   .section3{
     background-image: url(./images/plain.webp);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
   }
   .mot-mis-vis{
     display: flex;
@@ -342,6 +343,7 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     text-align: center;
+    
     
   }
 
@@ -358,10 +360,14 @@ body {
   background-image: url(./images/motos.jpeg);
   /*color: rgb(230, 196, 6);*/
   color: rgb(253, 249, 249);
-  width: 300px;
+  width: 400px;
+  height: 270px;
   border-radius: 5px;
   
+  
   }
+
+
 
   .mis{
     border: 4px solid transparent;
@@ -372,6 +378,8 @@ body {
   color: rgb(253, 249, 249);
 
   overflow: hidden;
+  width: 500px;
+  height: 270px;
   }
 
   .vis{
@@ -383,12 +391,26 @@ body {
   color: rgb(253, 249, 249);
 
   overflow: hidden;
+  width: 600px;
+  height: 270px;
   }
 
   .mmv:hover{
   color: rgb(230, 196, 6);
 
   }
+
+  .motto p{
+    padding: 30px;
+    font-size: 1.1em;
+  }
+
+  .mis p{
+    padding-top: 20px;
+    
+  }
+
+  
 
   /*-------------------------------------Section2----------------------------------------*/ 
   #section2{
